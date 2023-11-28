@@ -1,6 +1,6 @@
 SELECT DISTINCT
 	CASE 
-		WHEN mezirocni_narust_potraviny - mezirocni_narust_mzdy > 10 THEN 'Ano, takový rok existuje'
+		WHEN abs(mezirocni_narust_potraviny - mezirocni_narust_mzdy) > 10 THEN 'Ano, takový rok existuje'
 		ELSE 'Ne, takový rok neexistuje'
 	END AS 'Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd?'
 FROM (
