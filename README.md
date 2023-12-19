@@ -1,3 +1,5 @@
+Discord: Kateřina Bálint (katerinabalint_41161)
+
 Projekt z SQL
 ---
 # Struktura projektu
