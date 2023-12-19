@@ -35,13 +35,11 @@ SELECT *,
 	CASE 
 		WHEN mezirocni_narust_potraviny < 0 THEN 'Pokles'
 		WHEN mezirocni_narust_potraviny BETWEEN 0 AND 5 THEN 'Nižší nárůst'
-		WHEN mezirocni_narust_potraviny IS NULL THEN NULL
 		ELSE 'Vyšší nárůst'
 	END AS zmena_potraviny,
 	CASE
 		WHEN mezirocni_narust_hdp < 0 THEN 'Pokles'
 		WHEN mezirocni_narust_hdp BETWEEN 0 AND 4 THEN 'Nižší nárůst'
-		WHEN mezirocni_narust_hdp IS NULL THEN NULL
 		ELSE 'Vyšší nárůst'
 	END AS zmena_hdp,
 	CASE
